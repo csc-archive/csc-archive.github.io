@@ -9,6 +9,8 @@
     <title>CSC135 - Theory of Computation</title>
     <!-- Favicon-->
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css" rel="stylesheet" />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
 </head>
@@ -19,21 +21,24 @@
         <div class="border-end bg-white" id="sidebar-wrapper">
             <div class="sidebar-heading border-bottom bg-light"><b>CSC 135</b> <br> Theory of Computation</div>
             <div class="list-group list-group-flush">
-                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Course Summary</a>
-                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Course Structure</a>
-                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Assignments/Projects</a>
-                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Exams</a>
-                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Opinions on Professor</a>
-                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">My Review</a>
+                <a class="list-group-item list-group-item-action list-group-item p-3" href="#summary">Course Summary</a>
+                <a class="list-group-item list-group-item-action list-group-item p-3" href="#structure">Course Structure</a>
+                <a class="list-group-item list-group-item-action list-group-item p-3" href="#notes">Notes, Files, & Links</a>
+                <a class="list-group-item list-group-item-action list-group-item p-3" href="#exams">Exams</a>
+                <a class="list-group-item list-group-item-action list-group-item p-3" href="#opinion">Opinions on Professor</a>
+                <a class="list-group-item list-group-item-action list-group-item p-3" href="#review">My Overall Rating</a>
+                <a class="list-group-item list-group-item-action list-group-item p-3 text-primary" href="index.html">Back to Home</a>
             </div>
         </div>
         <!-- Page content wrapper-->
-        <div id="page-content-wrapper">
-            <!-- Top navigation-->
+        <div id="page-content-wrapper" class="container">
+            <!-- Top navigation
             <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
                 <div class="container-fluid">
+
                     <button class="btn btn-primary" id="sidebarToggle">Toggle Menu</button>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
                             <li class="nav-item active">
@@ -45,32 +50,229 @@
                         </ul>
                     </div>
                 </div>
-            </nav>
+            </nav>-->
             <!-- Page content-->
-            <div class="container-fluid">
-                <h1 class="mt-4">Course Summary</h1>
-                <p>Nothing to display yet.</p>
+            <div id="summary" class="container">
+                <h2 class="mt-4">Course Summary</h2>
+                <p>Theory of Computation is notoriously one of the most difficult courses for Computer Science students and has not proven to be particularly useful outside of compiler construction/research.</p>
+                <ul>
+                    <li>Deterministic Finite Automata (DFA)</li>
+                    <li>Non-deterministic Finite Automata (NFA)</li>
+                    <li>NFA to DFA Conversion</li>
+                    <li>Regular Expressions & Operations</li>
+                    <li><b style="color:orangered">The Pumping Lemma</b></li>
+                    <li>Scanning in a Compiler</li>
+                    <li><b style="color:orangered">Context-Free & Regular Grammars</b></li>
+                    <li><b style="color:orangered">Push-down Automata</b></li>
+                    <li><b style="color:orangered">Closure Properties of Context-Free Languages</b></li>
+                    <li>Parsing in a Compiler</li>
+                    <li>Turing Machines & Algorithms</li>
+                    <li><b style="color:orangered">Decidability & Reducibility</b></li>
+                    <li>The Halting Problem</li>
+                </ul>
+                <p>** The <b style="color:orangered">topics boldened in orange</b> were <u>very difficult</u> for many students to understand past a basic level compared to other topics. You may need to spend significantly more time studying these, as the
+                    exams that cover them will be unforgiving.</p>
             </div>
-            <div class="container-fluid">
-                <h1 class="mt-4">Course Structure</h1>
-                <p>Nothing to display yet.</p>
+            <div id="structure" class="container">
+                <h2 class="mt-4">Course Structure</h2>
+                <p>Depending on which section you enroll in, you will either meet on Tues/Thurs or Mon/Wed/Fri every week. My professor had a messy hybrid structure but this is the general structure of the lecture meetings.</p>
+                <h5>Lecture Recordings</h5>
+                <div class="container">
+                    <p>I have uploaded all Zoom recordings for the entire course onto a YouTube playlist which can be found <a class="blue-link" href="!#">here</a>. <br>Note that any gaps in video recordings are likely because of holidays and class cancellations
+                        by the professor.</p>
+                </div>
+                <h5>Grading Scale</h5>
+                <p>For most CSC135 professors, the minimum passing grade in the course is a 50% (C-) but even reaching this percentage is difficult for many.</p>
+                <div class="container">
+                    <table class="table table-condensed table-hover">
+                        <thead>
+                            <tr>
+                                <th>Title</th>
+                                <th>Percent</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Assignments</td>
+                                <td>15%</td>
+                            </tr>
+                            <tr>
+                                <td>Short Exam #1</td>
+                                <td>10%</td>
+                            </tr>
+                            <tr>
+                                <td>Short Exam #2</td>
+                                <td>10%</td>
+                            </tr>
+                            <tr>
+                                <td>Midterm Exam</td>
+                                <td>25%</td>
+                            </tr>
+                            <tr>
+                                <td>Final Exam</td>
+                                <td>40%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
-            <div class="container-fluid">
-                <h1 class="mt-4">Assignments/Projects</h1>
-                <p>Nothing to display yet.</p>
+            <div id="notes" class="container">
+                <div class="container">
+                    <h2 class="mt-4">Notes, Files, & Links</h2>
+                    <p>Any notes, slideshows, or helpful links that I've gathered throughout the course are posted below:</p>
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>Assignment</th>
+                                <th>Download Link</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Assignment #1</td>
+                                <td>Download</td>
+                            </tr>
+                            <tr>
+                                <td>Assignment #2</td>
+                                <td>Download</td>
+                            </tr>
+                            <tr>
+                                <td>Assignment #3</td>
+                                <td>Download</td>
+                            </tr>
+                            <tr>
+                                <td>Assignment #4</td>
+                                <td>Download</td>
+                            </tr>
+                            <tr>
+                                <td>Assignment #5</td>
+                                <td>Download</td>
+                            </tr>
+                            <tr>
+                                <td>Assignment #6</td>
+                                <td>Download</td>
+                            </tr>
+                            <tr>
+                                <td>Assignment #7</td>
+                                <td>Download</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="container">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>Notes</th>
+                                <th>Download Link</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Short Exam #1</td>
+                                <td>Download</td>
+                            </tr>
+                            <tr>
+                                <td>Short Exam #2</td>
+                                <td>Download</td>
+                            </tr>
+                            <tr>
+                                <td>Midterm Exam</td>
+                                <td>Download</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="container">
+                    <table class="table table-condensed table-hover">
+                        <thead>
+                            <tr>
+                                <th>Links</th>
+                                <th>Source</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><i class="bi bi-youtube" style="color:red"></i> Lecture Playlist</td>
+                                <td><a target="_blank" class="blue-link" href="https://www.youtube.com/playlist?list=PLBpXCmBjXY6NR2z-3k8THXeNi1pgSMDht">Open</a></td>
+                            </tr>
+                            <tr>
+                                <td>The Big-O Cheat Sheet</td>
+                                <td><a target="_blank" class="blue-link" href="https://www.bigocheatsheet.com/">Open</a></td>
+                            </tr>
+                            <tr>
+                                <td>Radix Sort</td>
+                                <td><a target="_blank" class="blue-link" href="https://www.geeksforgeeks.org/radix-sort/">Open</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
-            <div class="container-fluid">
-                <h1 class="mt-4">Exams</h1>
-                <p>Nothing to display yet.</p>
+            <div id="exams" class="container">
+                <h2 class="mt-4">Exams</h2>
+                There were 4 exams that went in the following order:
+                <ol>
+                    <li>Short Exam #1</li>
+                    <li>Midterm Exam</li>
+                    <li>Short Exam #2</li>
+                    <li>Final Exam</li>
+                </ol>
+                <p>The exams for my professor (Ghassan Shobaki) caused a considerable amount of fear to spread because of how difficult they are. He implements this really odd (and flawed, imo) philosophy into his teaching about finding the intelligent students
+                    in the class by putting Ph.D level questions on his tests as if some student with a hyper-ascended level of knowledge will just appear out of nowhere and construct a compiler in front of him on the whiteboard one day so his research
+                    can finally come to an end. Sadly to say, very few students are passing out of the original enrollment roster. As of week 15 (16 week course), our class size went from 50 to 28. And out of the 28 that are still here, only 10 are passing.
+                    That is a 20% pass rate.
+                </p>
+                <p>I've also seen and heard through students taking professor Parham Phoulady that his exams are nearly equally difficult. Phoulady conducts this really stupid social experiment with his students on his exams where he offers to give every
+                    student 100% if 0 students attempt to take a test. How this is even allowed by the department, I have no f###### clue. If you are offered this same fate and are taking courses in-person, just simply block the entrance to the classroom.
+                    If you are taking his course online, do not search for answers on Chegg or CourseHero or any source that gives out answers to schoolwork. He poisons the well by putting ridiculously difficult problems on his exams that no student should
+                    know the answer to in an effort to weed out cheaters. Just take the exams with what knowledge of the material that you have and you'll probably pass since the intuition to cheat on extremely difficult exams will come naturally to the
+                    students who don't heed this warning and it'll get massively curved once the cheaters all get zeros.</p>
+                <h5>Midterm Exam Study Guide</h5>
+                <p>Download <a class="blue-link" href="!#">here</a>.</p>
+                <h5>Final Exam Study Guide</h5>
+                <p>Download <a class="blue-link" href="!#">here</a>.</p>
             </div>
-            <div class="container-fluid">
-                <h1 class="mt-4">Opinions on Professor</h1>
-                <p>Nothing to display yet.</p>
+            <div id="opinion" class="container">
+                <h2 class="mt-4">Opinions on Professor</h2>
+                <div class="alert alert-primary d-flex align-items-center" role="alert" style="margin-top:15px;">
+                    <div>
+                        Views expressed in this section are solely my opinion and it is my goal to provide real, honest feedback with zero BS. Please take my words as one student's overall experience and perspective out of tens of thousands of others.
+                    </div>
+                </div>
+                <p class="fw-bold">My Professor: Devin Cook</p>
+                <p>Professor Shobaki is a newer professor to Sac State, and recently moved from a University in the Middle East to teach computer science at this school. His lectures are objectively of excellent quality, minus a few hit/miss sessions every
+                    now and then. Though with this one positive aspect out of the way, as implied previously, his exams make you feel like an idiot. I watched every single lecture recording in cadence with his in-person and online lectures that he gives
+                    as a sort of 'supplemental discussion' period for students to further enhance their understanding of topics. But even as I found myself nodding my head and taking great notes on what he taught, when it came time for each exam I felt
+                    powerless on many questions. He classifies every problem on his exams as 'easy', 'medium', 'hard' or combinations of the three like 'easy/medium' or 'medium/hard' and makes the hard questions worth the most points. Every student minus
+                    one has not been able to answer a single 'hard' question on any given exam thus far. You best hope that you don't have any overperforming students in your section or you will never be getting any curves on exams.
+                </p>
+                <p>He also has this bizarre tendency to randomly mock people who don't show up to every in-class lecture and saying that they "do not deserve to pass if they are not here." The subject of full-on dropping out of CSC as a major has been brought
+                    up numerous times by this professor as well. Blaming poor overall performance on exams on his students not being intelligent enough rather than taking responsibility and catering the questions to undergraduate students instead of Ph.D
+                    students.
+                </p>
+                <p>So in summary, he's a very good lecturer but needlessly rude to students who don't perform well or need help and has brutally hard exams.</p>
+                <h5>Level of Difficulty</h5>
+                <p>5/5</p>
+                <h5>Would Take Again?</h5>
+                <p>Not if my life counted on it, I would rather die.</p>
+                <h5>Hours Per Week Spent on Study/Homework</h5>
+                <p>25+ hours, you will suffer.</p>
             </div>
-            <div class="container-fluid">
-                <h1 class="mt-4">Overall Rating</h1>
-                <p>Nothing to display yet.</p>
+            <div id="review" class="container" style="padding-bottom:200px;">
+                <h2 class="mt-4">Overall Rating</h2>
+                <h5 class="text-danger">Mostly Negative</h5>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star"></i>
+                <i class="bi bi-star"></i>
+                <i class="bi bi-star"></i>
+                <p style="padding-top:5px;">A stereotypically unuseful course that has some interesting topics smooshed into it. Considering that the textbook used for this course is called "Engineering a Compiler" you can probably guess what this course *actually* teaches. It teaches
+                    compiler construction on a basic level and nothing more. Plenty of old heads in the field will tell you that this course is totally necessary and is something every student should have to take, but I strongly disagree with this narrative.
+                    Studying primitive ways to code and construct programs is nice to know but certainly not a must-have skill in modern computing where everything is of high-level nature. With most courses in the CSC department, I've felt that I actually
+                    obtained a useful skill through each one. But with this one, I feel as though I have not learned any sort of tangible marketable skill. All I can really say is that I understand how Turing Machines work which is what the material ultimately
+                    leads up to towards the end of the class. It is a 16 week course on Turing Machines and compilers.</p>
             </div>
+
         </div>
     </div>
     <!-- Bootstrap core JS-->
