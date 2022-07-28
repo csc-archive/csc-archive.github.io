@@ -22907,3 +22907,13 @@
             margin-left: 260px;
         }
     }
+
+    .red {
+        color: red;
+    }
+    .green {
+        color: limegreen;
+    }
+    .blue {
+        color: dodgerblue;
+    }

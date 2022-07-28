@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title>CSC154 - Cyber Attacks & Countermeasures</title>
+    <title>CSC154 - Cyber Attacks & Counter-measures</title>
     <!-- Favicon-->
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css" rel="stylesheet" />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
 </head>
@@ -17,60 +19,213 @@
     <div class="d-flex" id="wrapper">
         <!-- Sidebar-->
         <div class="border-end bg-white" id="sidebar-wrapper">
-            <div class="sidebar-heading border-bottom bg-light"><b>CSC 154</b> <br> Cyber Attacks & Countermeasures</div>
+            <div class="sidebar-heading border-bottom bg-light"><b>CSC 154</b> <br> Cyber Attacks &<br>Counter-measures</div>
             <div class="list-group list-group-flush">
-                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Course Summary</a>
-                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Course Structure</a>
-                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Assignments/Projects</a>
-                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Exams</a>
-                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Opinions on Professor</a>
-                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">My Review</a>
+                <a class="list-group-item list-group-item-action list-group-item p-3" href="#summary">Course Summary</a>
+                <a class="list-group-item list-group-item-action list-group-item p-3" href="#structure">Course Structure</a>
+                <a class="list-group-item list-group-item-action list-group-item p-3" href="#notes">Notes, Files, & Links</a>
+                <a class="list-group-item list-group-item-action list-group-item p-3" href="#exams">Exams</a>
+                <a class="list-group-item list-group-item-action list-group-item p-3" href="#gp">The Group Project</a>
+                <a class="list-group-item list-group-item-action list-group-item p-3" href="#opinion">Opinions on Professor</a>
+                <a class="list-group-item list-group-item-action list-group-item p-3" href="#review">My Overall Rating</a>
+                <a class="list-group-item list-group-item-action list-group-item p-3 text-primary" href="index.html">Back to Home</a>
             </div>
         </div>
         <!-- Page content wrapper-->
-        <div id="page-content-wrapper">
-            <!-- Top navigation-->
-            <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
-                <div class="container-fluid">
-                    <button class="btn btn-primary" id="sidebarToggle">Toggle Menu</button>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="index.html">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="about.html">About</a>
-                            </li>
-                        </ul>
+        <div id="page-content-wrapper" class="container">
+            <!-- Page content-->
+            <div id="summary" class="container">
+                <h2 class="mt-4">Course Summary</h2>
+                <p>An easy elective course for those interested in cybersec or just wanna know how some popular hacks are typically carried out (and what you can do to stop them).</p>
+                <h5>This course was just 5 hacking labs, 2 exams, and 1 very easy group project. Since 99% of your time will be spent on the labs, here are how the labs follow (in order):</h4>
+                <ol>
+                    <li>Buffer Overflow - Difficulty: <b style="color:limegreen;">Very Easy</b></li>
+                    <li>Tikiwiki Penetration - Difficulty: <b style="color:red;">Hard</b></li>
+                    <li>Pentesting w/ Armitage - Difficulty: <b style="color:orangered;">Medium</b></li>
+                    <li>Heartbleed Attack - Difficulty: <b style="color:dodgerblue;">Easy</b></li>
+                    <li>SQL Injection - Difficulty: <b style="color:limegreen;">Very Easy</b></li>
+                </ol>
+            </div>
+            <div id="structure" class="container">
+                <h2 class="mt-4">Course Structure</h2>
+                <p>Depending on which section you enroll in, you will either meet on Tues/Thurs or Mon/Wed/Fri every week. As of Fall 2022, most courses are being held in person - 
+                    if you are looking to attend online make sure to find a section that has either the "Hybrid" or "Web Online" modes of instruction shown on the student center.</p>
+                <h5>Lecture Recordings</h5>
+                <div class="container">
+                    <p>I have uploaded all Zoom recordings for the entire course onto a YouTube playlist which can be found <a class="blue-link" href="https://www.youtube.com/playlist?list=PLBpXCmBjXY6Pc2GwcJJCfeJ7CbWImeLL3">here</a>. <br>Note that any gaps in video recordings are likely because of holidays and class cancellations
+                        by the professor.</p>
+                </div>
+                <h5>Grading Scale</h5>
+                <div class="container">
+                    <table class="table table-condensed table-hover">
+                        <thead>
+                            <tr>
+                                <th>Title</th>
+                                <th>Percent</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Labs</td>
+                                <td>35%</td>
+                            </tr>
+                            <tr>
+                                <td>Group Project</td>
+                                <td>30%</td>
+                            </tr>
+                            <tr>
+                                <td>Midterm Exam</td>
+                                <td>15%</td>
+                            </tr>
+                            <tr>
+                                <td>Final Exam</td>
+                                <td>20%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div id="notes" class="container">
+                <div class="container">
+                    <h2 class="mt-4">Notes, Files, & Links</h2>
+                    <p>Any notes, slideshows, or helpful links that I've gathered throughout the course are posted below:</p>
+                    <table class="table table-condensed table-hover">
+                        <thead>
+                            <tr>
+                                <th>Lab Instructions</th>
+                                <th>Download Link</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Lab #1 - Buffer Overflow (PDF)</td>
+                                <td>Download</td>
+                            </tr>
+                            <tr>
+                                <td>Lab #2 - Tikiwiki Penetration (PDF)</td>
+                                <td>Download</td>
+                            </tr>
+                            <tr>
+                                <td>Lab #3 - Pentesting w/ Armitage (PDF)</td>
+                                <td>Download</td>
+                            </tr>
+                            <tr>
+                                <td>Lab #4 - Heartbleed (PDF)</td>
+                                <td>Download</td>
+                            </tr>
+                            <tr>
+                                <td>Lab #5 - SQL Injection (PDF)</td>
+                                <td>Download</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="container">
+                    <table class="table table-condensed table-hover">
+                        <thead>
+                            <tr>
+                                <th>Notes</th>
+                                <th>Download Link</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Midterm Exam Guide (PDF)</td>
+                                <td>Download</td>
+                            </tr>
+                            <tr>
+                                <td>Final Exam Guide (PDF)</td>
+                                <td>Download</td>
+                            </tr>
+                            <tr>
+                                <td>EVERYTHING (PDF)</td>
+                                <td>Download</td>
+                            </tr>
+                            <tr>
+                                <td>CSC154 Syllabus (PDF)</td>
+                                <td>Download</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="container">
+                    <table class="table table-condensed table-hover">
+                        <thead>
+                            <tr>
+                                <th>Links</th>
+                                <th>Source</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><i class="bi bi-youtube" style="color:red"></i> Lecture Playlist</td>
+                                <td><a target="_blank" class="blue-link" href="https://www.youtube.com/playlist?list=PLBpXCmBjXY6NR2z-3k8THXeNi1pgSMDht">Open</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div id="exams" class="container">
+                <h2 class="mt-4">Exams</h2>
+                <ul>
+                    <li>The only two exams were the midterm and final.</li>
+                    <li>Student average on midterm: <i class="bi bi-arrow-up green"></i>89%</li>
+                    <li>Student average on final: <i class="bi bi-arrow-down red"></i>76%</li>
+                    <li>The final exam is cumulative <u>(covers everything)</u> so prepare accordingly.</li>
+                </ul>
+                <h5>Midterm Exam Study Guide</h5>
+                <p>Download <a class="blue-link" href="!#">here</a> or use the link found under 'Notes'</p>
+                <h5>Final Exam Study Guide</h5>
+                <p>Download <a class="blue-link" href="!#">here</a> or use the link found under 'Notes'</p>
+            </div>
+            <div id="gp" class="container">
+                <h2 class="mt-4">The Group Project</h2>
+                <ul>
+                    <li>Each group must only consist of 2 students each.</li>
+                    <li>The project is just a simple slideshow presentation.</li>
+                    <li>You must describe in detail 3 major cyber security incidents (hacks, breaches, leaks, etc.).</li>
+                    <li><u>All groups will present on the day before the final exam.</u></li>
+                    <li>This shouldn't take more than maybe an hour total to complete, very easy project.</li>
+                </ul>
+                <h5>Project Instructions</h5>
+                <p>Download <a class="blue-link" href="!#">here</a> or use the link found under 'Notes'</p>
+            </div>
+            <div id="opinion" class="container">
+                <h2 class="mt-4">Opinions on Professor</h2>
+                <div class="alert alert-primary d-flex align-items-center" role="alert" style="margin-top:15px;">
+                    <div>
+                        Views expressed in this section are solely my opinion and it is my goal to provide real, honest feedback with zero BS. Please take my words as one student's overall experience and perspective out of tens of thousands of others.
                     </div>
                 </div>
-            </nav>
-            <!-- Page content-->
-            <div class="container-fluid">
-                <h1 class="mt-4">Course Summary</h1>
-                <p>Nothing to display yet.</p>
+                <p class="fw-bold">My Professor: Jun Dai</p>
+                <p>Professor Dai is not a terrible professor nor is he an amazing professor. But he is very lenient on grading and I've taken 3 of his courses and found them to be very easy compared to the nonsense that you may encounter with other professors.
+                    He really hates when students don't understand most topics. Even if it's been 12 weeks since he last covered something, Dai will lose his mind if you ask a question about something he's taught already. Though other than this, he's not very present
+                    in the classroom and generally does not care if you screw up a lab/assignment, he will still give you a passing grade on almost everything if you at least tried it. I remember not being able to reach a certain point in the 'Tikiwiki Penetration' hack
+                    and he still gave me a 90% on my lab. As mentioned at the top of this page, you will spend 99% of your time on his labs. The material almost doesn't matter since you can find most answers to his exams already written out in his notes. Labs are 75% grammar and spelling,
+                    25% screenshots of successful hacking. If you have decent writing skills, you won't need to do much to pass this course.
+                    <br><br>
+                    <b class="blue">TL;DR if you need an easy CSC140+ elective, TAKE THIS COURSE!</b>
+                </p>
+                <h5>Level of Difficulty</h5>
+                <p>2.5/5</p>
+                <h5>Would Take Again?</h5>
+                <p>Yeah</p>
+                <h5>Hours Per Week Spent on Study/Homework</h5>
+                <p>~ 8 hours</p>
             </div>
-            <div class="container-fluid">
-                <h1 class="mt-4">Course Structure</h1>
-                <p>Nothing to display yet.</p>
+            <div id="review" class="container" style="padding-bottom:200px;">
+                <h2 class="mt-4">Overall Rating</h2>
+                <h5 class="text-primary">Mostly Positive</h5>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star"></i>
+                <p style="padding-top:5px;">An honestly very cool course that teaches both ethical hacking and counter-measures to the most popular hacks that take place every day across the globe. If you are interested
+                in cyber security or just need a really easy elective course to get the stupid elective requirements out of the damn way, this one should be near the top of your priority list. It should be said that the labs
+                were heavily outdated, as they show exploits found over a decade ago and have been public knowledge for many many years. So while you will learn some basic hacking skills, don't expect anything crazy.</p>
             </div>
-            <div class="container-fluid">
-                <h1 class="mt-4">Assignments/Projects</h1>
-                <p>Nothing to display yet.</p>
-            </div>
-            <div class="container-fluid">
-                <h1 class="mt-4">Exams</h1>
-                <p>Nothing to display yet.</p>
-            </div>
-            <div class="container-fluid">
-                <h1 class="mt-4">Opinions on Professor</h1>
-                <p>Nothing to display yet.</p>
-            </div>
-            <div class="container-fluid">
-                <h1 class="mt-4">Overall Rating</h1>
-                <p>Nothing to display yet.</p>
-            </div>
+
         </div>
     </div>
     <!-- Bootstrap core JS-->
@@ -78,5 +233,4 @@
     <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
 </body>
-
 </html>
