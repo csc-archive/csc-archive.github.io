@@ -9,6 +9,8 @@
     <title>CSC131 - Software Engineering</title>
     <!-- Favicon-->
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css" rel="stylesheet" />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
 </head>
@@ -17,60 +19,250 @@
     <div class="d-flex" id="wrapper">
         <!-- Sidebar-->
         <div class="border-end bg-white" id="sidebar-wrapper">
-            <div class="sidebar-heading border-bottom bg-light"><b>CSC 131</b> <br> Software Engineering</div>
+            <div class="sidebar-heading border-bottom bg-light"><b>CSC 179</b> <br> Software Engineering</div>
             <div class="list-group list-group-flush">
-                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Course Summary</a>
-                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Course Structure</a>
-                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Assignments/Projects</a>
-                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Exams</a>
-                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Opinions on Professor</a>
-                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">My Review</a>
+                <a class="list-group-item list-group-item-action list-group-item p-3" href="#summary">Course Summary</a>
+                <a class="list-group-item list-group-item-action list-group-item p-3" href="#structure">Course Structure</a>
+                <a class="list-group-item list-group-item-action list-group-item p-3" href="#notes">Notes, Files, & Links</a>
+                <a class="list-group-item list-group-item-action list-group-item p-3" href="#exams">Exams</a>
+                <a class="list-group-item list-group-item-action list-group-item p-3" href="#gp">The Group Project</a>
+                <a class="list-group-item list-group-item-action list-group-item p-3" href="#opinion">Opinions on Professor</a>
+                <a class="list-group-item list-group-item-action list-group-item p-3" href="#review">My Overall Rating</a>
+                <a class="list-group-item list-group-item-action list-group-item p-3 text-primary" style="font-weight:600" href="index.html">Back to Home</a>
             </div>
         </div>
         <!-- Page content wrapper-->
-        <div id="page-content-wrapper">
-            <!-- Top navigation-->
-            <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
-                <div class="container-fluid">
-                    <button class="btn btn-primary" id="sidebarToggle">Toggle Menu</button>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="index.html">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="about.html">About</a>
-                            </li>
+        <div id="page-content-wrapper" class="container">
+            <!-- Page content-->
+            <div id="summary" class="container">
+                <h2 class="mt-4">Course Summary</h2>
+                <p>A useful course that teaches coding in groups. This course will consist mainly of you working with a group to code something cool. Every group will consist of about 5-8 people and you will take on a <b>real</b> client who is looking for some software to be made. That is where you and your group come in.</p>
+                <h5>There are only 2 exams and 1 semester-long group project.</h4>
+                <ul>
+                    <li>The midterm and final are the only exams you will take.
+                        <ul>
+                            <li>Similarly to CSC179, the exams are very easy but some questions are impossible to answer bc the prof never goes over some topics presented on the exam (though getting above a B is almost guaranteed for every student).</li>
                         </ul>
+                    </li>
+                    <li>The group project
+                        <ul>
+                            <li>If you're a CSC major, this is your first major group project that you'll definitely want to put on your resum&eacute; <b>especially</b> if you end up as team lead or do most/all of the work.
+                            It is inevitable that some, if not all your group members will not know anything about the languages/tools required by the client in order to program your software. In my case, I used Java and some JavaScript. In CSC179 (an identical elective course to CSC131), I used mainly webdev languages like HTML, Sass, JavaScript, and GraphQL, but the required languages could be anything so be prepared to learn a lot.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div id="structure" class="container">
+                <h2 class="mt-4">Course Structure</h2>
+                <p>Depending on which section you enroll in, you will either meet on Tues/Thurs or Mon/Wed/Fri every week. As of Fall 2022, most courses are being held in person - 
+                    if you are looking to attend online make sure to find a section that has either the "Hybrid" or "Web Online" modes of instruction shown on the student center.</p>
+                <h5>Lecture Recordings</h5>
+                <div class="container">
+                    <p>I have uploaded all Zoom recordings for the entire course onto a YouTube playlist which can be found <a target="_blank" class="blue-link" href="https://www.youtube.com/playlist?list=PLBpXCmBjXY6N6j-C87SaOQH03eYM9Qocy">here</a>. <br>Note that any gaps in video recordings are likely because of holidays and class cancellations
+                        by the professor.</p>
+                </div>
+                <h5>Grading Scale</h5>
+                <div class="container">
+                    <table class="table table-condensed table-hover">
+                        <thead>
+                            <tr>
+                                <th>Title</th>
+                                <th>Percent</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Midterm Exam</td>
+                                <td>30%</td>
+                            </tr>
+                            <tr>
+                                <td>Final Exam</td>
+                                <td>30%</td>
+                            </tr>
+                            <tr>
+                                <td>Project</td>
+                                <td>30%</td>
+                            </tr>
+                            <tr>
+                                <td>Project Presentation</td>
+                                <td>5%</td>
+                            </tr>
+                            <tr>
+                                <td><b>*</b> Class Attendance & Participation</td>
+                                <td>5%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p><b>*</b> Class attendance and participation was not mandatory for me, it's just kinda in the syllabus and is never tracked so it's basically free points.</p>
+                </div>
+            </div>
+            <div id="notes" class="container">
+                <div class="container">
+                    <h2 class="mt-4">Notes, Files, & Links</h2>
+                    <p>Any notes, slideshows, or helpful links that I've gathered throughout the course are posted below:</p>
+                    <table class="table table-condensed table-hover">
+                        <thead>
+                            <tr>
+                                <th>Lecture Notes</th>
+                                <th>Download Link</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1) Software Engineering Concepts</td>
+                                <td>Download</td>
+                            </tr>
+                            <tr>
+                                <td>2) Requirement Engineering</td>
+                                <td>Download</td>
+                            </tr>
+                            <tr>
+                                <td>3) Analysis Modeling</td>
+                                <td>Download</td>
+                            </tr>
+                            <tr>
+                                <td>4) Object Oriented Analysis & UML</td>
+                                <td>Download</td>
+                            </tr>
+                            <tr>
+                                <td>5) Design Concepts & Principles</td>
+                                <td>Download</td>
+                            </tr>
+                            <tr>
+                                <td>6) UML Design Models</td>
+                                <td>Download</td>
+                            </tr>
+                            <tr>
+                                <td>7) Objected Oriented Design</td>
+                                <td>Download</td>
+                            </tr>
+                            <tr>
+                                <td>8) Software Testing</td>
+                                <td>Download</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="container">
+                    <table class="table table-condensed table-hover">
+                        <thead>
+                            <tr>
+                                <th>Notes</th>
+                                <th>Download Link</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Sample SRS (DOC)</td>
+                                <td>Download</td>
+                            </tr>
+                            <tr>
+                                <td>SRS Outline/Requirements (DOC)</td>
+                                <td>Download</td>
+                            </tr>
+                            <tr>
+                                <td>Sample SDD (DOC)</td>
+                                <td>Download</td>
+                            </tr>
+                            <tr>
+                                <td>SDD Outline/Requirements (DOC)</td>
+                                <td>Download</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+                <div class="container">
+                    <table class="table table-condensed table-hover">
+                        <thead>
+                            <tr>
+                                <th>Links</th>
+                                <th>Source</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><i class="bi bi-youtube" style="color:red"></i> Lecture Playlist</td>
+                                <td><a target="_blank" class="blue-link" href="https://www.youtube.com/playlist?list=PLBpXCmBjXY6N6j-C87SaOQH03eYM9Qocy">Open</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div id="exams" class="container">
+                <h2 class="mt-4">Exams</h2>
+                <ul>
+                    <li>Midterm:
+                        <ul>
+                            <li>High: <i class="bi bi-arrow-up green"></i>98%</li>
+                            <li>Average: <i class="bi bi-arrow-down red"></i>81%</li>
+                            <li>Low: 73%</li>
+                        </ul>
+                    </li>
+                    <li>Final:
+                        <ul>
+                            <li>High: <i class="bi bi-arrow-down red"></i>93%</li>
+                            <li>Average: <i class="bi bi-arrow-up green"></i>82%</li>
+                            <li>Low: 68%</li>
+                        </ul>
+                    </li>
+                    <li>The midterm and final are the only 2 exams.</li>
+                    <li>The final exam is cumulative <u>(covers everything)</u> so prepare accordingly.</li>
+                    <li>Some questions will be impossible for you to answer without external means.</li>
+                </ul>
+                <h5>Final Exam Study Guide</h5>
+                <p>Download <a class="blue-link" href="!#">here</a> or use the link found under 'Notes'</p>
+            </div>
+            <div id="gp" class="container">
+                <h2 class="mt-4">The Group Project</h2>
+                <ul>
+                    <li>Each group must consist of at least 5 and at most 8 students.</li>
+                    <li>The professor will find a client for you to build some software for.</li>
+                    <li><b>Pick your group members very wisely.</b> If any group members are being a waste of space and/or freeloading off of your hard work, remove them and notify the professor
+                        that they are no longer working w/ you.
+                    </li>
+                    <li><u>All groups will present their final project results on the week of the final exam.</u></li>
+                    <li>Almost every group will guaranteed have at least one member who does nothing, do NOT be shy to kick them out. Don't settle for mediocrity. Save your sanity.</li>
+                </ul>
+                <h5>Project Instructions</h5>
+                <p>Download <a class="blue-link" href="!#">here</a> or use the link found under 'Notes'</p>
+            </div>
+            <div id="opinion" class="container">
+                <h2 class="mt-4">Opinions on Professor</h2>
+                <div class="alert alert-primary d-flex align-items-center" role="alert" style="margin-top:15px;">
+                    <div>
+                        Views expressed in this section are solely my opinion and it is my goal to provide real, honest feedback with zero BS. Please take my words as one student's overall experience and perspective out of tens of thousands of others.
                     </div>
                 </div>
-            </nav>
-            <!-- Page content-->
-            <div class="container-fluid">
-                <h1 class="mt-4">Course Summary</h1>
-                <p>Nothing to display yet.</p>
+                <p class="fw-bold">My Professor: Ahmed Salem</p>
+                <p>Professor Salem is a very kind professor with an extraordinary level of flexibility towards his students. He is willing to accomodate students on almost anything as long as you ask. If you are going to be sick
+                    on an exam day, he will let you take it at home at any time you like. If you need extra time on homework/deliverables for the project he extends it by a whole week just because you asked. Though his lectures and
+                    handwriting are exceptionally messy at times, he is an outstanding example for the rest of the department for how a professor should treat their students. If you see his name on the student center on any course 
+                    that you are trying to take, IMMEDIATELY ENROLL in one of his sections. I don't think most groups would have made it out of this course in one piece had Professor Salem not been the instructor for it tbh.
+                </p>
+                <h5>Level of Difficulty</h5>
+                <p>For me: 3/5 (dependent on how useful your group members are)</p>
+                <h5>Would Take Again?</h5>
+                <p>Maybe</p>
+                <h5>Hours Per Week Spent on <strike>Study/Homework</strike> Group Project</h5>
+                <p>~ 12 hours</p>
             </div>
-            <div class="container-fluid">
-                <h1 class="mt-4">Course Structure</h1>
-                <p>Nothing to display yet.</p>
+            <div id="review" class="container" style="padding-bottom:200px;">
+                <h2 class="mt-4">Overall Rating</h2>
+                <h5 class="text-primary">Mostly Positive</h5>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star"></i>
+                <p style="padding-top:5px;">
+                A good course that's an easy A if you pick a good group. The course material is mostly irrelevant to the group project and is almost never
+                reinforced through any assignments. I had a terrible group so this course was significantly harder than I expected because all 6 other group members
+                freeloaded off of my work and did nothing the whole semester. I had a few other team leads contact me asking for advice on what to do with useless group members 
+                and I'm telling you (the reader) the exact same thing I told all of them - do not be shy to kick them out. <u>Do not settle for less.</u> Get rid of them.
+                This entire course is the group project, if you pick a bad team you are royally screwed.</p>
             </div>
-            <div class="container-fluid">
-                <h1 class="mt-4">Assignments/Projects</h1>
-                <p>Nothing to display yet.</p>
-            </div>
-            <div class="container-fluid">
-                <h1 class="mt-4">Exams</h1>
-                <p>Nothing to display yet.</p>
-            </div>
-            <div class="container-fluid">
-                <h1 class="mt-4">Opinions on Professor</h1>
-                <p>Nothing to display yet.</p>
-            </div>
-            <div class="container-fluid">
-                <h1 class="mt-4">Overall Rating</h1>
-                <p>Nothing to display yet.</p>
-            </div>
+
         </div>
     </div>
     <!-- Bootstrap core JS-->
