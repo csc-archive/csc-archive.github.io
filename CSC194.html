@@ -9,6 +9,8 @@
     <title>CSC194 - Computer Science Seminar</title>
     <!-- Favicon-->
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css" rel="stylesheet" />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
 </head>
@@ -17,60 +19,163 @@
     <div class="d-flex" id="wrapper">
         <!-- Sidebar-->
         <div class="border-end bg-white" id="sidebar-wrapper">
-            <div class="sidebar-heading border-bottom bg-light"><b>CSC 194</b> <br> Computer Science Seminar</div>
+            <div class="sidebar-heading border-bottom bg-light"><b>CSC 194</b> <br>Computer Science <br> Seminar<br></div>
             <div class="list-group list-group-flush">
-                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Course Summary</a>
-                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Course Structure</a>
-                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Assignments/Projects</a>
-                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Exams</a>
-                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Opinions on Professor</a>
-                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">My Review</a>
+                <a class="list-group-item list-group-item-action list-group-item p-3" href="#summary">Course Summary</a>
+                <a class="list-group-item list-group-item-action list-group-item p-3" href="#structure">Course Structure</a>
+                <a class="list-group-item list-group-item-action list-group-item p-3" href="#notes">Notes, Files, & Links</a>
+                <a class="list-group-item list-group-item-action list-group-item p-3" href="#exams">Exams</a>
+                <a class="list-group-item list-group-item-action list-group-item p-3" href="#opinion">Opinions on Professor</a>
+                <a class="list-group-item list-group-item-action list-group-item p-3" href="#review">My Overall Rating</a>
+                <a class="list-group-item list-group-item-action list-group-item p-3 text-primary" href="index.html">Back to Home</a>
             </div>
         </div>
         <!-- Page content wrapper-->
-        <div id="page-content-wrapper">
-            <!-- Top navigation-->
-            <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
-                <div class="container-fluid">
-                    <button class="btn btn-primary" id="sidebarToggle">Toggle Menu</button>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="index.html">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="about.html">About</a>
-                            </li>
+        <div id="page-content-wrapper" class="container">
+            <!-- Page content-->
+            <div id="summary" class="container">
+                <h2 class="mt-4">Course Summary</h2>
+                <p>Nothing to display yet.
+                </p>
+                <h5>Nothing to display yet.</h4>
+                    <!--
+                <ul>
+                    <li>The group project
+                        <ul>
+                            <li>Nothing to display yet.</li>
                         </ul>
+                    </li>
+                    <li>The group project
+                        <ul>
+                            <li>Nothing to display yet.</li>
+                        </ul>
+                    </li>
+                </ul>
+            -->
+            </div>
+            <div id="structure" class="container">
+                <h2 class="mt-4">Course Structure</h2>
+                <h5>Lecture Recordings</h5>
+                <div class="container">
+                    <p>Nothing to display yet.</p>
+                </div>
+                <h5>Grading Scale</h5>
+                <div class="container">
+                    <table class="table table-condensed table-hover">
+                        <thead>
+                            <tr>
+                                <th>Title</th>
+                                <th>Percent</th>
+                            </tr>
+                        </thead>
+                        <!--
+                        <tbody>
+                            <tr>
+                                <td>Peer Evaluation</td>
+                                <td>5%</td>
+                            </tr>
+                            <tr>
+                                <td>Individual Assignments</td>
+                                <td>5%</td>
+                            </tr>
+                            <tr>
+                                <td>Oral Presentation Performance</td>
+                                <td>10%</td>
+                            </tr>
+                            <tr>
+                                <td>Deliverables</td>
+                                <td>40%</td>
+                            </tr>
+                            <tr>
+                                <td>Sprint Performance</td>
+                                <td>40%</td>
+                            </tr>
+                        </tbody>-->
+                    </table>
+                </div>
+            </div>
+            <div id="notes" class="container">
+                <div class="container">
+                    <h2 class="mt-4">Notes, Files, & Links</h2>
+                    <p>Any notes, slideshows, or helpful links that I've gathered throughout the course are posted below:</p>
+                    <table class="table table-condensed table-hover">
+                        <thead>
+                            <tr>
+                                <th>Lecture Notes</th>
+                                <th>Download Link</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                </div>
+                <!--
+                <div class="container">
+                    <table class="table table-condensed table-hover">
+                        <thead>
+                            <tr>
+                                <th>Notes</th>
+                                <th>Download Link</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>CSC179 File Dump (ZIP)</td>
+                                <td>Download</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                -->
+                <!--
+                <div class="container">
+                    <table class="table table-condensed table-hover">
+                        <thead>
+                            <tr>
+                                <th>Links</th>
+                                <th>Source</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><i class="bi bi-youtube" style="color:red"></i> Lecture Playlist</td>
+                                <td><a target="_blank" class="blue-link" href="https://www.youtube.com/playlist?list=PLBpXCmBjXY6O8GcJsh49aCGUDlDsbVRMB">Open</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                -->
+            </div>
+            <div id="opinion" class="container">
+                <h2 class="mt-4">Opinions on Professor</h2>
+                <div class="alert alert-primary d-flex align-items-center" role="alert" style="margin-top:15px;">
+                    <div>
+                        Views expressed in this section are solely my opinion and it is my goal to provide real, honest feedback with zero BS. Please take my words as one student's overall experience and perspective out of tens of thousands of others.
                     </div>
                 </div>
-            </nav>
-            <!-- Page content-->
-            <div class="container-fluid">
-                <h1 class="mt-4">Course Summary</h1>
+                <p class="fw-bold">My Professor: Matthew Phillips</p>
+                <p>No opinion on professor yet.
+                    <br><br>
+                </p>
+                <h5>Level of Difficulty</h5>
+                <p>Nothing to display yet.</p>
+                <h5>Would Take Again?</h5>
+                <p>Nothing to display yet.</p>
+                <h5>Hours Per Week Spent on <strike>Study/Homework</strike> Group Project</h5>
                 <p>Nothing to display yet.</p>
             </div>
-            <div class="container-fluid">
-                <h1 class="mt-4">Course Structure</h1>
-                <p>Nothing to display yet.</p>
+            <div id="review" class="container" style="padding-bottom:200px;">
+                <h2 class="mt-4">Overall Rating</h2>
+                <h5 class="text-muted">No opinion yet</h5>
+                <i class="bi bi-star"></i>
+                <i class="bi bi-star"></i>
+                <i class="bi bi-star"></i>
+                <i class="bi bi-star"></i>
+                <i class="bi bi-star"></i>
+                <p style="padding-top:5px;">Nothing to display yet.</p>
             </div>
-            <div class="container-fluid">
-                <h1 class="mt-4">Assignments/Projects</h1>
-                <p>Nothing to display yet.</p>
-            </div>
-            <div class="container-fluid">
-                <h1 class="mt-4">Exams</h1>
-                <p>Nothing to display yet.</p>
-            </div>
-            <div class="container-fluid">
-                <h1 class="mt-4">Opinions on Professor</h1>
-                <p>Nothing to display yet.</p>
-            </div>
-            <div class="container-fluid">
-                <h1 class="mt-4">Overall Rating</h1>
-                <p>Nothing to display yet.</p>
-            </div>
+
         </div>
     </div>
     <!-- Bootstrap core JS-->
